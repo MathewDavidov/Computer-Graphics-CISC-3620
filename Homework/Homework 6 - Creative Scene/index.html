@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Homework #6 - Creative Scene - Mathew Davidov</title>
+    <style>
+      body {
+        max-width: 100%;
+      }
+      /* feel free to style the canvas any way you want. If you want it to
+      use the entire window, set width: 100% and height: 100%. */
+
+      canvas {
+        width: 80%;
+        height: 500px;
+        display: block;
+        margin: 10px auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Homework 6: Creative Scene, Basketball Gym, by Mathew Davidov</h1>
+
+    <ul>
+      <li>0: reset animation to initial state</li>
+      <li>1: take one step</li>
+      <li>g: "go" &mdash; start the animation <q>loop</q></li>
+      <li>SPC: stop the animation</li>
+    </ul>
+
+    <ol>
+      <li>
+        Modeling, particularly hierarchical: The basketball hoop is comprised of
+        a pole, a pole extension, a backboard, and a rim in a hierarchal
+        fashion.
+      </li>
+      <li>
+        Material, lighting and shading: All the materials in the scene make of
+        use of Lambert or Phong material. Ambient, directional, and spotlight
+        lights are used throughout the scene. The ball casts a shadow on the
+        floor through the spotlight.
+      </li>
+      <li>
+        Textures and texture-mapping: The floor, walls, and basketball make use
+        of textures.
+      </li>
+      <li>
+        User interaction: A GUI is available to change deltaT, the size of the
+        ball, and the floor texture.
+      </li>
+      <li>Animation: The ball is on a path using positional animation.</li>
+    </ol>
+  </body>
+  <script src="https://threejs.org/build/three.js"></script>
+  <script src="https://s3.amazonaws.com/m.mr-pc.org/t/cisc3620/2020sp/tw.js"></script>
+  <script src="https://s3.amazonaws.com/m.mr-pc.org/t/cisc3620/2020sp/three.min.js"></script>
+  <script src="https://s3.amazonaws.com/m.mr-pc.org/t/cisc3620/2020sp/OrbitControls.js"></script>
+  <script src="https://s3.amazonaws.com/m.mr-pc.org/t/cisc3620/2020sp/dat.gui.min.js"></script>
+  <script src="main.js"></script>
+</html>
